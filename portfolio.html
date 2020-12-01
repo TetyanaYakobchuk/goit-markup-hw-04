@@ -4,110 +4,156 @@
     <meta charset="UTF-8" />
     <meta name="description" content="портфолио" />
     <link rel="stylesheet" href="styles.css">
-    <title>Портфолио</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header  class="page-header">
-    <!--Главная навигация-->
-     <nav>
-        <!--Логотип-->
-        <a href="index.html" class="logo"><span class="web-logo">Web</span><span class="studio-logo">Studio</span></a>
-        <!-- Навигация на другие страницы -->
-        <ul class="links">
-            <li><a href="index.html" class="current-link">Студия</a></li>
-            <li><a href="portfolio.html" class="nav-link">Портфолио</a></li>
-            <li><a href="" class="nav-link">Контакты</a></li>
-        </ul>
-        <ul class="contacts-nav">
-            <li><a href="mailto:info@devstudio.com" class="contact-header">info@devstudio.com</a></li>
-            <li><a href="tel:+38 096 111 11 11" class="contact-header">+38 096 111 11 11</a></li>
-        </ul>
-     </nav>
-
+    <header  class="header">
+        <div class="container header-nav">
+            <!--Главная навигация-->
+            <nav>
+                <!--Логотип-->
+                <a href="index.html" class="logo">Web<span class="studio-logo">Studio</span></a>
+                <!-- Навигация на другие страницы -->
+                <ul class="links">
+                    <li class="item"><a href="index.html" class="current-link">Студия</a></li>
+                    <li class="item"><a href="portfolio.html" class="nav-link">Портфолио</a></li>
+                    <li class="item"><a href="" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <address class="header-address">
+                <ul class="address-nav list">
+                    <li class="address-nav-item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="address-nav-item"><a href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </header>
 
     <main>
         <!--фильтр портфолио-->
-        <nav>
-            <!-- Навигация по проектам-->
-            <button type="button" class="button-portfolio">Все</button>
-            <button type="button" class="button-portfolio">Веб-сайты</button>
-            <button type="button" class="button-portfolio">Приложения</button>
-            <button type="button" class="button-portfolio">Дизайн</button>
-            <button type="button" class="button-portfolio">Маркетинг</button> 
-        </nav>
+        <section class="portfolio-section">
+            <div class="container">
+                <h1 class="visible-hidden">Портфолио</h1> <!-- Скроем-->
+                <ul class="portfolio-container"> 
+                    <!-- Навигация по проектам-->
+                    <li><button type="button" class="btn-portfolio">Все</button></li>
+                    <li><button type="button" class="btn-portfolio">Веб-сайты</button></li>
+                    <li><button type="button" class="btn-portfolio">Приложения</button></li>
+                    <li><button type="button" class="btn-portfolio">Дизайн</button></li>
+                    <li><button type="button" class="btn-portfolio">Маркетинг</button></li>
+                </ul>
 
 
-        <!--проекты-->
-        <section>
-            <ul>
-                <li><a href="">
-                <img src="images/img(0).jpg" alt="Технокряк" width="">
-                <h2 class="project-name">Технокряк</h2>
-                <p class="project-type">Веб-сайт</p>
-                <!--<p>Технокряк  это современная площадка распространения коронавируса. Компания использует эту платформу для цифрового шпионажа и атак на защищенные сервера конкурентов.</p>-->
-                </a></li>
+                <!--проекты-->
+                <ul class="projects-container">
+                    <li class="projects">
+                        <a href="">
+                            <img src="images/img(0).jpg" alt="Технокряк" class="portfolio-img" width="370">
+                            <div class="portfolio-content">
+                                <h2 class="project-name">Технокряк</h2>
+                                <p class="project-type">Веб-сайт</p>
+                            <!--<p>Технокряк  это современная площадка распространения коронавируса. Компания использует эту платформу для цифрового шпионажа и атак на защищенные сервера конкурентов.</p>-->
+                            </div>
+                        </a>
+                    </li>
 
-                <li><a href="">
-                <img src="images/img(1).jpg" alt="Постер" width="">
-                <h2 class="project-name">Постер New Orlean vs Golden Stars</h2>
-                <p class="project-type">Дизайн</p>
-                </a></li>
+                    <li>
+                        <a href="">
+                            <img src="images/img(1).jpg" alt="Постер" class="portfolio-img" width="370">
+                            <div class="portfolio-content">
+                                <h2 class="project-name">Постер New Orlean vs Golden Stars</h2>
+                                <p class="project-type">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li><a href="">
-                <img src="images/img(2).jpg" alt="Ресторан Seafood" width="">
-                <h2 class="project-name">Ресторан Seafood</h2>
-                <p class="project-type">Приложение</p>
-                </a></li>
+                    <li>
+                        <a href="">
+                            <img src="images/img(2).jpg" alt="Ресторан Seafood" class="portfolio-img" width="370">
+                            <div class="portfolio-content">
+                                <h2 class="project-name">Ресторан Seafood</h2>
+                                <p class="project-type">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li><a href="">
-                <img src="images/img(3).jpg" alt="Проект Prime" width="">
-                <h2 class="project-name">Проект Prime</h2>
-                <p class="text-portfolio">Маркетинг</p>
-                </a></li>
+                    <li>
+                        <a href="">
+                            <img src="images/img(3).jpg" alt="Проект Prime" class="portfolio-img" width="370">
+                            <div class="portfolio-content">
+                                <h2 class="project-name">Проект Prime</h2>
+                                <p class="text-portfolio">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li><a href="">
-                <img src="images/img(4).jpg" alt="роект Boxes" width="">
-                <h2 class="project-name">Проект Boxes</h2>
-                <p class="project-type">Приложение</p>
-                </a></li>
+                    <li>
+                        <a href="">
+                            <img src="images/img(4).jpg" alt="роект Boxes" class="portfolio-img" width="370">
+                            <div class="portfolio-content">
+                                <h2 class="project-name">Проект Boxes</h2>
+                                <p class="project-type">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li><a href="">
-                <img src="images/img(5).jpg" alt="Inspiration has no Borders" width="">
-                <h2 class="project-name">Inspiration has no Borders</h2>
-                <p class="project-type">Веб-сайт</p>
-                </a></li>
+                    <li>
+                        <a href="">
+                            <img src="images/img(5).jpg" alt="Inspiration has no Borders" class="portfolio-img" width="370">
+                            <div class="portfolio-content">
+                                <h2 class="project-name">Inspiration has no Borders</h2>
+                                <p class="project-type">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li><a href="">
-                <img src="images/img(6).jpg" alt="Издание" width="">
-                <h2 class="project-name">Издание Limited Edition</h2>
-                <p class="project-type">Дизайн</p>
-                </a></li>
+                    <li>
+                        <a href="">
+                            <img src="images/img(6).jpg" alt="Издание" class="portfolio-img" width="370">
+                            <div class="portfolio-content">
+                                <h2 class="project-name">Издание Limited Edition</h2>
+                                <p class="project-type">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li><a href="">
-                <img src="images/img(7).jpg" alt="Проект LAB" width="">
-                <h2 class="project-name">Проект LAB</h2>
-                <p class="project-type">Маркетинг</p>
-                </a></li>
+                    <li>
+                        <a href="">
+                            <img src="images/img(7).jpg" alt="Проект LAB" class="portfolio-img" width="370">
+                            <div class="portfolio-content">
+                                <h2 class="project-name">Проект LAB</h2>
+                                <p class="project-type">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li><a href="">
-                <img src="images/img(8).jpg" alt="Growing Business" width="">
-                <h2 class="project-name">Growing Business</h2>
-                <p class="project-type">Приложение</p>
-                </a></li>
-            </ul>
+                    <li>
+                        <a href="">
+                            <img src="images/img(8).jpg" alt="Growing Business" class="portfolio-img" width="370">
+                            <div class="portfolio-content">
+                                <h2 class="project-name">Growing Business</h2>
+                                <p class="project-type">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <!--Подвал страницы-->
     <footer class="footer">
-        <a href="index.html" class="logo"><span class="web-logo">Web</span><span class="studio-footer">Studio</span></a>
-        <address>
-            <p class="adress">г.Киев, пр-т Леси Украинки,26</p>
-            <a href="mailto:info@example" class="contact-footer">info@example</a><br>
-            <a href="tel:+38 099 111 11 11" class="contact-footer">+38 099 111 11 11</a>
-        </address>
+        <div class="container">
+            <a href="index.html" class="logo down">Web<span class="logo-studio">Studio</span></a>
+            <address class="footer-adress">
+                г.Киев, пр-т Леси Украинки,26
+                <a class="footer-contact" href="mailto:info@example">info@example</a>
+                <a class="footer-contact" href="tel:+38 099 111 11 11">+38 099 111 11 11</a>
+            </address>
+        </div>
     </footer>
 </body>
 </html>
