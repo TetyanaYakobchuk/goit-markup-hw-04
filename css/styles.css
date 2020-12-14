@@ -162,11 +162,11 @@ nav {
   background-position: center;
 }
 .address-nav-item:nth-child(1)::before {
-  background-image: url(/images/envelope.svg);
+  background-image: url(/images/icons/envelope.svg);
   fill: currentColor;
 }
 .address-nav-item:nth-child(2)::before {
-  background-image: url(/images/smartphone.svg);
+  background-image: url(/images/icons/smartphone.svg);
   fill: currentColor;
 }
 .address-nav {
@@ -359,55 +359,20 @@ nav {
   justify-content: center;
 }
 
-/* .soc-icons:not(:last-child) {
-  margin-right: 10px;
-} */
-/* .social-link {
-  display: inline-block;
-  height: 44px;
-  width: 44px;
-  align-items: center;
-  content: ' ';
-  border: 1px solid #afb1b8;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  background-position: center;
-  border-radius: 50%;
-  margin-top: 16px;
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-
-.social-link:nth-child(1) {
-  background-image: url(/images/instagram.svg);
-  margin-right: 10px;
-  margin-left: 30px;
-}
-.social-link:nth-child(2) {
-  background-image: url(/images/twitter.svg);
-  margin-right: 10px;
-}
-.social-link:nth-child(3) {
-  background-image: url(/images/facebook.svg);
-  margin-right: 10px;
-}
-.social-link:nth-child(4) {
-  background-image: url(/images/linkedin.svg);
-  margin-right: 10px;
-} */
-/* 
-.section-icon:hover {
-  background-color: var(--accent-color);
-  color: var(--primery-white-color);
-}
-
 .icon {
   fill: currentColor;
   display: block;
-  width: 20px;
-  height: 20px;
-} */
+  width: 44px;
+  height: 44px;
+}
+.icon:hover .background,
+.icon:focus .background {
+  fill: #2196f3;
+}
+.icon:hover .letter,
+.icon:focus .letter {
+  fill: #fff;
+}
 .client-title {
   padding-top: 94px;
   color: var(--txt-title-color);
@@ -436,27 +401,27 @@ nav {
   cursor: pointer;
 }
 .clients:nth-child(1)::before {
-  background-image: url(/images/Client-1.svg);
+  background-image: url(/images/icons/Client-1.svg);
   margin-right: 30px;
 }
 .clients:nth-child(2)::before {
-  background-image: url(/images/Client-2.svg);
+  background-image: url(/images/icons/Client-2.svg);
   margin-right: 30px;
 }
 .clients:nth-child(3)::before {
-  background-image: url(/images/Client-3.svg);
+  background-image: url(/images/icons/Client-3.svg);
   margin-right: 30px;
 }
 .clients:nth-child(4)::before {
-  background-image: url(/images/Client-4.svg);
+  background-image: url(/images/icons/Client-4.svg);
   margin-right: 30px;
 }
 .clients:nth-child(5)::before {
-  background-image: url(/images/Client-5.svg);
+  background-image: url(/images/icons/Client-5.svg);
   margin-right: 30px;
 }
 .clients:nth-child(6)::before {
-  background-image: url(/images/Client-6.svg);
+  background-image: url(/images/icons/Client-6.svg);
 }
 .clients:hover,
 .clients:focus {
