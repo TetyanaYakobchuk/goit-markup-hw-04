@@ -495,7 +495,7 @@ nav {
   color: #ffffff;
 }
 .logo-studio {
-  color: rgba(33, 150, 243, 1);
+  color: var(--accent-color);
 }
 .main-address {
   display: flex;
@@ -518,7 +518,7 @@ nav {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--txt-contact);
 }
 .footer-social .icon-item:not(:first-child) {
   margin-left: 10px;
@@ -548,7 +548,7 @@ nav {
 }
 .icon-link:hover,
 .icon-link:focus {
-  background-color: rgba(33, 150, 243, 1);
+  background-color: var(--accent-color);
   fill: #ffffff;
 }
 .logo-social {
@@ -557,12 +557,12 @@ nav {
 }
 .footer-social .icon-link {
   fill: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--bgr-icon);
 }
 
 .footer-social .icon-link:hover,
 .footer-social .icon-link:focus {
-  background-color: rgba(33, 150, 243, 1);
+  background-color: var(--accent-color);
 }
 
 .address-card,
@@ -574,7 +574,7 @@ nav {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--txt-contact);
 }
 /*------------------PORTFOLIO---------------------*/
 .portfolio-section {
