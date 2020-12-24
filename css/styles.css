@@ -163,16 +163,15 @@ nav {
   background-color: var(--bgr-primery-dark);
   color: var(--primery-white-color);
   height: 600px;
-  width: 1600px;
+  max-width: 1600px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('/images/bgd-main-opt.jpg');
+    url('../images/bgd-main-opt.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -200,7 +199,7 @@ nav {
 }
 /* ADVANTAGES SECTION */
 .section-advantages {
-  width: 1600px;
+  max-width: 1600px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -287,7 +286,7 @@ nav {
 
 /* JOB SECTION */
 .job-section {
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -320,7 +319,7 @@ nav {
 }
 
 .team {
-  width: 1600px;
+  max-width: 1600px;
   /* height: 705px; */
   background-color: var(--background);
 }
@@ -399,7 +398,7 @@ nav {
 /* CLIENTS */
 
 .client {
-  width: 1600px;
+  max-width: 1600px;
 }
 .client-logo {
   display: flex;
@@ -510,7 +509,7 @@ nav {
 
 /* FOOTER */
 .footer {
-  width: 1600px;
+  max-width: 1600px;
 
   background: #2f303a;
 }
